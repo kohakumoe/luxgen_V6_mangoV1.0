@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A4203C1-16A2-4030-B07C-83DD7D8D2581}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UART_Tool.My.MyApplication</StartupObject>
+    <RootNamespace>UART_Tool</RootNamespace>
+    <AssemblyName>LUXGEN TOOL</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>car.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LUXGEN TOOL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LUXGEN TOOL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary_Access, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Class\ClassLibrary_Access.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibrary_DC_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Class\ClassLibrary_DC_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibrary_INI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Class\ClassLibrary_INI.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibrary_TSC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Class\ClassLibrary_TSC.dll</HintPath>
+    </Reference>
+    <Reference Include="SerialPortControlLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Edward\VS2005\archcyber0725\VS2005\Components\SerialPortControlLibrary\SerialPortControlLibrary\bin\Debug\SerialPortControlLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmpControl.Designer.vb">
+      <DependentUpon>AmpControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AmpControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrintLabel.Designer.vb">
+      <DependentUpon>FormPrintLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrintLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBurn.Designer.vb">
+      <DependentUpon>FormBurn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBurn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSUV3.Designer.vb">
+      <DependentUpon>FormSUV3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSUV3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdate.Designer.vb">
+      <DependentUpon>FormUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserLabel.Designer.vb">
+      <DependentUpon>FormUserLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatewayControl.Designer.vb">
+      <DependentUpon>GatewayControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatewayControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormAmpTest.Designer.vb">
+      <DependentUpon>FormAmpTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAmpTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAmpTest2.Designer.vb">
+      <DependentUpon>FormAmpTest2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAmpTest2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSUV11.Designer.vb">
+      <DependentUpon>FormSUV11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSUV11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGPS11.Designer.vb">
+      <DependentUpon>FormGPS11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGPS11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSUVmornco.Designer.vb">
+      <DependentUpon>FormSUVmornco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSUVmornco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGPK1.Designer.vb">
+      <DependentUpon>FormGPK1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGPK1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGPS3.Designer.vb">
+      <DependentUpon>FormGPS3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGPS3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMPV.Designer.vb">
+      <DependentUpon>FormMPV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMPV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AmpControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AmpControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrintLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrintLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBurn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBurn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSUV3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSUV3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormUserLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatewayControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GatewayControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAmpTest.resx">
+      <DependentUpon>FormAmpTest.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAmpTest2.resx">
+      <DependentUpon>FormAmpTest2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSUV11.resx">
+      <DependentUpon>FormSUV11.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGPS11.resx">
+      <DependentUpon>FormGPS11.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSUVmornco.resx">
+      <DependentUpon>FormSUVmornco.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGPK1.resx">
+      <DependentUpon>FormGPK1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGPS3.resx">
+      <DependentUpon>FormGPS3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMPV.resx">
+      <DependentUpon>FormMPV.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gateway Computer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XSIMPLE GREEN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XSIMPLE SILVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="car.ico" />
+    <Content Include="Gold Robot.ico" />
+    <Content Include="printerss.ico" />
+    <None Include="Resources\Green light.ico" />
+    <None Include="Resources\Red light.ico" />
+    <None Include="Resources\LUXGEN.bmp" />
+    <None Include="Resources\MsnStyle3.JPG" />
+    <None Include="Resources\MSN2-CloseButton-Down.png" />
+    <None Include="Resources\MSN2-CloseButton-Over.png" />
+    <None Include="Resources\MSN2-CloseButton-Default.png" />
+    <None Include="Resources\doc3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Class\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
